@@ -1,0 +1,61 @@
+@mixin text-box {
+  background-color: white;
+  padding: 20px;
+  border: 4px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+
+  font-size: 2rem;
+  font-family: Clementine;
+  position: absolute;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    transition: 0.1s ease-in-out;
+    background-color: rgb(235, 200, 2);
+  }
+}
+
+.Intro {
+  width: 100%;
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.First {
+  @include text-box;
+  left: 10%;
+  top: 10%;
+
+}
+
+.Second {
+  @include text-box;
+  top: 28%;
+  left: 36%;
+}
+
+.Third {
+  @include text-box;
+
+  right: 15%;
+  top: 40%;
+}
+
+.Final {
+  width: 100%;
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &Text {
+    bottom: 25%;
+    left: 15%;
+    @include text-box;
+    font-size: 3rem;
+  }
+}

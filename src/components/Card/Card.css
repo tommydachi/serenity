@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  background-color: whitesmoke;
+  padding: 25px;
+  border-radius: 15px;
+
+  margin: 2.5rem 0;
+  transition: 0.15s ease-in-out;
+}
+
+.card-container:hover {
+  transition: 0.15s ease-in-out;
+  transform: scale(1.1) rotate(-1deg);
+}
+
+.card-date {
+  font-size: 1.5rem;
+}
+
+.card-image img {
+  margin: 1rem 3rem 1rem 1rem;
+  height: 80px;
+  width: auto;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header-info {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.card-header {
+  color: black;
+  font-size: 2.5rem;
+  font-family: 'DM Serif Display', serif;
+}
+
+.card-body {
+  color: black;
+  font-size: 1.5rem;
+}
+
