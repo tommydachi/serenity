@@ -11,6 +11,9 @@ import "./App.css";
 function App() {
   const [showIntro, setShowIntro] = React.useState<boolean>(false);
   const [cityHover, setCityHover] = React.useState<string>("Rome");
+  const cardOnClick = (url: string) => {
+    window.open(url, '_blank');
+  }
 
   return (
     <div className="Background">
@@ -57,6 +60,7 @@ function App() {
                 <img
                   src="https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/008/580/original/Prospa_Icon_Black_CMYK.png?1678066106"
                   alt="Prospa logo"
+                  onClick={() => cardOnClick("https://www.prospa.com/")}
                 />
               }
               header={
@@ -90,6 +94,7 @@ function App() {
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/1200px-PricewaterhouseCoopers_Logo.svg.png"
                   alt="PWC logo"
+                  onClick={() => cardOnClick("https://www.pwc.com.au/")}
                 />
               }
               header={

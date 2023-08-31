@@ -40,8 +40,8 @@
 .Third {
   @include text-box;
 
-  right: 15%;
-  top: 40%;
+  right: 8%;
+  top: 45%;
 }
 
 .Final {
@@ -53,8 +53,8 @@
   justify-content: center;
   
   &Text {
-    bottom: 25%;
-    left: 15%;
+    bottom: 22%;
+    left: 25%;
     @include text-box;
     font-size: 3rem;
   }
