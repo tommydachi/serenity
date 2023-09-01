@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import { ContactButton } from "../..";
 import styles from './Contact.module.scss';
+import resume from 'src/assets/Tommy_Truong_Resume.pdf'
 
 export const Contact = () => {
   const onClick = (url: string, openInNewTab?: boolean) => {
@@ -40,7 +41,7 @@ export const Contact = () => {
         <ContactButton
           platform={"Resume"}
           icon={<FontAwesomeIcon icon={faFile} style={{ color: "#ffffff" }} />}
-          onClick={() => onClick("https://www.linkedin.com/in/tommy--truong/")}
+          onClick={() => onClick(resume)}
         />
       </div>
     </>
