@@ -8,11 +8,33 @@ body {
   padding: 0;
 
   word-wrap: break-word;
+  overflow: overlay;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #560061;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e100ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #960da8;
 }
 
 @font-face {

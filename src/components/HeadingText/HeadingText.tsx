@@ -1,17 +1,17 @@
 import styles from "./HeadingText.module.scss";
 import { Typewriter } from "react-simple-typewriter";
 
-export const HeadingText = () => {
+export const HeadingText = ({ useRef }: { useRef: any}) => {
   return (
-    <div className={styles.HeadingText}>
+    <div ref={useRef} className={styles.HeadingText} data-aos="fade-down-right">
       <span className={styles.HeadingTextHeading}>
         <Typewriter
           words={["Hey, I'm Tommy!"]}
-          loop={5}
+          loop={2}
           cursor
           cursorStyle="_"
-          typeSpeed={150}
-          deleteSpeed={100}
+          typeSpeed={120}
+          deleteSpeed={150}
           delaySpeed={1000}
         />
 

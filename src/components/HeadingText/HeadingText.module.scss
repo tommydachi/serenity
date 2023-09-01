@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 .HeadingText {
   display: flex;
@@ -9,14 +10,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 200px 100px;
+  padding: 300px 100px;
 
   &Heading {
     padding: 0;
     margin: 0;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 6rem;
   }
 
   &Subtext {
