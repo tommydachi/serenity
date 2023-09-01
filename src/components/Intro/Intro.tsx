@@ -1,42 +1,31 @@
-import { motion } from "framer-motion";
 import styles from "./Intro.module.scss";
+import "aos/dist/aos.css";
+import classNames from "classnames";
 
 export const Intro = () => {
   return (
     <>
       <div className={styles.Intro}>
-        <motion.div
-          className={styles.First}
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.75 }}
-        >
-          Okay, let's do this one last time...
-        </motion.div>
-        <motion.div
-          className={styles.Second}
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1.5 }}
-          >
-          My name is Tommy Truong,
-        </motion.div>
-        <motion.div
-          className={styles.Third}
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 2.25 }}
-        >
-          and for the past 4 months, I've been....
-        </motion.div>
-        <motion.div
-          className={styles.FinalText}
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 3 }}
-        >
-          a frontend software engineer!
-        </motion.div>
+        <div className={styles.IntroContainer}>
+          <div className={classNames(styles.Text, styles.TextFirst)} data-aos="zoom-in-down" data-aos-delay="500">
+            <span>Okay, let's do this one last time...</span>
+          </div>
+        </div>
+        <div className={styles.IntroContainer}>
+          <div className={styles.Text} data-aos="zoom-in" data-aos-delay="1250">
+            <span>My name is Tommy Truong</span>
+          </div>
+        </div>
+        <div className={styles.IntroContainer}>
+          <div className={styles.Text} data-aos="zoom-in" data-aos-delay="2000">
+            <span>and for the past 4 months, I've been...</span>
+          </div>
+        </div>
+        <div className={styles.IntroContainer}>
+          <div className={styles.Text} data-aos="zoom-in-up" data-aos-delay="2750">
+            <span>a frontend software engineer.</span>
+          </div>
+        </div>
       </div>
     </>
   );

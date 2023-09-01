@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
+
+  word-wrap: break-word;
 }
 
 code {
@@ -17,3 +19,4 @@ code {
   font-family: 'Clementine';
   src: local('Clementine'), url(./fonts/clem-italic.otf) format('opentype');
 }
+

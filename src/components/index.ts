@@ -5,3 +5,4 @@ export * from './Intro';
 export * from './ShowIntroButtons';
 export * from './Section';
 export * from './Card';
+export * from './ContactButton';
