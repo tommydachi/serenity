@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import { ContactButton } from "../..";
 import styles from './Contact.module.scss';
-import resume from 'src/assets/resume.pdf'
+import resume from '../../../assets/resume.pdf'
 
 export const Contact = () => {
   const onClick = (url: string, openInNewTab?: boolean) => {
