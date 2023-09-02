@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/serenity/static/css/main.b4e27e25.css",
-    "main.js": "/serenity/static/js/main.1e0fcc82.js",
+    "main.js": "/serenity/static/js/main.d8108dfe.js",
     "static/js/787.40303df4.chunk.js": "/serenity/static/js/787.40303df4.chunk.js",
-    "static/media/resume.pdf": "/serenity/static/media/resume.2224e296c66b016af102.pdf",
+    "static/media/resume.pdf": "/serenity/static/media/resume.99214442c3d711f571c1.pdf",
     "static/media/clem-italic.otf": "/serenity/static/media/clem-italic.e0620ec7c2c3d78b026e.otf",
     "index.html": "/serenity/index.html",
     "main.b4e27e25.css.map": "/serenity/static/css/main.b4e27e25.css.map",
-    "main.1e0fcc82.js.map": "/serenity/static/js/main.1e0fcc82.js.map",
+    "main.d8108dfe.js.map": "/serenity/static/js/main.d8108dfe.js.map",
     "787.40303df4.chunk.js.map": "/serenity/static/js/787.40303df4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4e27e25.css",
-    "static/js/main.1e0fcc82.js"
+    "static/js/main.d8108dfe.js"
   ]
 }
