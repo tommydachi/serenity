@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/serenity/static/css/main.b4e27e25.css",
-    "main.js": "/serenity/static/js/main.d8108dfe.js",
+    "main.css": "/serenity/static/css/main.3c2dc6ea.css",
+    "main.js": "/serenity/static/js/main.32a2b694.js",
     "static/js/787.40303df4.chunk.js": "/serenity/static/js/787.40303df4.chunk.js",
     "static/media/resume.pdf": "/serenity/static/media/resume.99214442c3d711f571c1.pdf",
     "static/media/clem-italic.otf": "/serenity/static/media/clem-italic.e0620ec7c2c3d78b026e.otf",
     "index.html": "/serenity/index.html",
-    "main.b4e27e25.css.map": "/serenity/static/css/main.b4e27e25.css.map",
-    "main.d8108dfe.js.map": "/serenity/static/js/main.d8108dfe.js.map",
+    "main.3c2dc6ea.css.map": "/serenity/static/css/main.3c2dc6ea.css.map",
+    "main.32a2b694.js.map": "/serenity/static/js/main.32a2b694.js.map",
     "787.40303df4.chunk.js.map": "/serenity/static/js/787.40303df4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4e27e25.css",
-    "static/js/main.d8108dfe.js"
+    "static/css/main.3c2dc6ea.css",
+    "static/js/main.32a2b694.js"
   ]
 }
