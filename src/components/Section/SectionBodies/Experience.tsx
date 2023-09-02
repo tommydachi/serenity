@@ -1,4 +1,4 @@
-import { Card } from "../../Card";
+import { WorkCard } from "../../Cards";
 
 type Props = {
   cardOnClick: (url: string) => void;
@@ -13,7 +13,7 @@ export const Experience = ({ cardOnClick }: Props) => {
         frontend path, and seeing that it combined my passions for both design
         and development, is the career I want to pursue today!
       </p>
-      <Card
+      <WorkCard
         image={
           <img
             src="https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/008/580/original/Prospa_Icon_Black_CMYK.png?1678066106"
@@ -46,7 +46,7 @@ export const Experience = ({ cardOnClick }: Props) => {
           </>
         }
       />
-      <Card
+      <WorkCard
         image={
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/1200px-PricewaterhouseCoopers_Logo.svg.png"

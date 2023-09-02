@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
-import "./Card.css";
+import "./WorkCard.css";
 
-type CardProps = {
+type WorkCardProps = {
   image: ReactNode;
   header: string | ReactNode;
   body: string | ReactNode;
 };
 
-export const Card = ({ image, header, body }: CardProps) => {
+export const WorkCard = ({ image, header, body }: WorkCardProps) => {
 
   return (
     <div className="card-container" data-aos="flip-right" data-aos-duration="1000">

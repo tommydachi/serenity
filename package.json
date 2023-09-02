@@ -4,6 +4,7 @@
   "homepage": "https://tommydachi.github.io/serenity",
   "private": true,
   "dependencies": {
+    "@dorbus/react-animated-modal": "^1.0.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",

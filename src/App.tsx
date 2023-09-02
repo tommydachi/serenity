@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { AboutMe } from "./components/Section/SectionBodies/AboutMe";
 import { Experience } from "./components/Section/SectionBodies/Experience";
 import { Contact } from "./components/Section/SectionBodies/Contact";
+import { Projects } from "./components/Section/SectionBodies/Projects";
 
 function App() {
   useEffect(() => {
@@ -48,6 +49,11 @@ function App() {
       <Section
         header="Experience"
         body={<Experience cardOnClick={cardOnClick} />}
+      />
+
+      <Section 
+        header="Projects"
+        body={<Projects />}
       />
 
       <Section header={"Contact"} body={<Contact />} />
