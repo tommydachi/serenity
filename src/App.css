@@ -1,4 +1,5 @@
 .Background {
+  position: relative;
   display: flex;
   background: linear-gradient(
     125deg,

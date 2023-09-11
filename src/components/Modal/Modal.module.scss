@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.Modal {
+  width: 600px;
+  height: auto;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+  color: black;
+
+  font-size: 1.1rem;
+
+  &Title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    
+    &Name {
+      font-size: 1.75rem;
+      font-family: 'DM Serif Display', serif;
+    }
+    
+    &Type {
+      font-family: 'Inter', sans-serif;
+    }
+    border-bottom: 2px solid black;
+  }
+  
+  &Desc {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  
+  &Footer {
+    padding-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+    border-top: 2px solid black;
+    &Info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &Button {
+      width: auto;
+      height: auto;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      background-color: black;
+
+      cursor: pointer;
+    }
+  }
+
+  &Link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+  }
+  
+}

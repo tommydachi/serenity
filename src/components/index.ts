@@ -6,3 +6,5 @@ export * from './ShowIntroButtons';
 export * from './Section';
 export * from './Cards';
 export * from './ContactButton';
+export * from './Backdrop';
+export * from './Modal';

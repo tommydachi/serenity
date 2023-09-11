@@ -1,18 +1,20 @@
-import React, { useRef } from "react";
-import { ContactButton, HeadingText, Intro, Section } from "./components";
+import React, { useRef, useEffect } from "react";
+import { HeadingText, Section, Backdrop, Modal } from "./components";
+import {
+  AboutMe,
+  Experience,
+  Projects,
+  Contact,
+} from "./components/Section/SectionBodies";
+import { projects } from "./projects";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { AboutMe } from "./components/Section/SectionBodies/AboutMe";
-import { Experience } from "./components/Section/SectionBodies/Experience";
-import { Contact } from "./components/Section/SectionBodies/Contact";
-import { Projects } from "./components/Section/SectionBodies/Projects";
 
 function App() {
   useEffect(() => {
     AOS.init({
-      offset: 250,
+      offset: 300,
     });
     AOS.refresh();
   }, []);
@@ -36,27 +38,42 @@ function App() {
     window.open(url, "_blank");
   };
 
+  const [selected, setSelected] = React.useState<any>({});
+  const [modalOpen, setModalOpen] = React.useState<boolean>(false);
+  const handleClose = () => {
+    setModalOpen(false);
+    document.body.style.overflow = "";
+  };
   return (
     <div className="Background">
-      <Intro />
+      {/* <Intro /> */}
       <HeadingText useRef={scrollToRef} />
-
       <Section
         header="About me"
         body={<AboutMe cityHover={cityHover} setCityHover={setCityHover} />}
       />
-
       <Section
         header="Experience"
         body={<Experience cardOnClick={cardOnClick} />}
       />
-
-      <Section 
+      <Section
         header="Projects"
-        body={<Projects />}
+        body={
+          <Projects
+            projects={projects}
+            selected={selected}
+            setSelected={setSelected}
+            setModalOpen={setModalOpen}
+          />
+        }
       />
-
       <Section header={"Contact"} body={<Contact />} />
+      <Backdrop modalOpen={modalOpen} handleClose={handleClose} />
+      <Modal
+        handleClose={handleClose}
+        modalOpen={modalOpen}
+        selected={selected}
+      />
     </div>
   );
 }

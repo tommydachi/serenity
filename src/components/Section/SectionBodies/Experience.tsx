@@ -1,4 +1,5 @@
 import { WorkCard } from "../../Cards";
+import styles from '../../Cards/WorkCard/WordCard.module.scss'
 
 type Props = {
   cardOnClick: (url: string) => void;
@@ -22,9 +23,9 @@ export const Experience = ({ cardOnClick }: Props) => {
           />
         }
         header={
-          <div className="card-header-info">
+          <div className={styles.CardHeaderInfo}>
             <div>Prospa</div>
-            <div className="card-date">May 2023 - Present</div>
+            <div className={styles.CardDate}>May 2023 - Present</div>
           </div>
         }
         body={
@@ -55,9 +56,9 @@ export const Experience = ({ cardOnClick }: Props) => {
           />
         }
         header={
-          <div className="card-header-info">
+          <div className={styles.CardHeaderInfo}>
             <div>PwC</div>
-            <div className="card-date">Dec 2022 - Feb 2023</div>
+            <div className={styles.CardDate}>Dec 2022 - Feb 2023</div>
           </div>
         }
         body={

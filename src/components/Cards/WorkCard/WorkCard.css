@@ -6,10 +6,10 @@
   width: auto;
 
   background-color: whitesmoke;
-  padding: 25px;
+  padding: 15px;
   border-radius: 15px;
 
-  margin: 4rem 0;
+  margin: 3rem 0;
   transition: 0.2s ease-in-out;
 }
 
@@ -35,6 +35,17 @@
   transform: scale(0.85);
 }
 
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    padding: 8.5px;
+  }
+  .card-image {
+    height: 35px;
+  }
+  
+}
+
 .card-details {
   display: flex;
   flex-direction: column;
@@ -51,12 +62,12 @@
 
 .card-header {
   color: black;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'DM Serif Display', serif;
 }
 
 .card-body {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "./WorkCard.css";
+import styles from './WordCard.module.scss';
 
 type WorkCardProps = {
   image: ReactNode;
@@ -10,11 +10,11 @@ type WorkCardProps = {
 export const WorkCard = ({ image, header, body }: WorkCardProps) => {
 
   return (
-    <div className="card-container" data-aos="flip-right" data-aos-duration="1000">
-      <div className="card-image">{image}</div>
-      <div className="card-details">
-        <div className="card-header">{header}</div>
-        <div className="card-body">{body}</div>
+    <div className={styles.CardContainer} data-aos="flip-right" data-aos-duration="1000">
+      <div className={styles.CardImage}>{image}</div>
+      <div className={styles.CardDetails}>
+        <div className={styles.CardHeader}>{header}</div>
+        <div className={styles.CardBody}>{body}</div>
       </div>
     </div>
   );
