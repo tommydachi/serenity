@@ -1,9 +1,9 @@
 import { WorkCard } from "../../Cards";
-import styles from '../../Cards/WorkCard/WordCard.module.scss'
+import styles from "../../Cards/WorkCard/WordCard.module.scss";
 
 type Props = {
   cardOnClick: (url: string) => void;
-}
+};
 
 export const Experience = ({ cardOnClick }: Props) => {
   return (
@@ -38,11 +38,18 @@ export const Experience = ({ cardOnClick }: Props) => {
             </p>
             <p>
               I have primarily been working on the frontend with the All-in-One
-              with a ReactJS + TypeScript stack, developing, testing and
+              team with a ReactJS + TypeScript stack, developing, testing and
               improving features for Prospa's customers whilst using a variety
               of tools including Jest and Cypress for testing, GraphQL for API
               queries, Azure for cloud pipelines and Google Analytics for data
               tracking!
+            </p>
+            <p>
+              This has been a great internship for me so far, meeting so many
+              different and talented people, as well as being able to solve
+              complex problems, and being able to work in the technology
+              industry for the first time! I truly believe that (as cliche as this is) I have grown, not
+              only as an engineer in this time, but as a team member and a person throughout this internship. 
             </p>
           </>
         }

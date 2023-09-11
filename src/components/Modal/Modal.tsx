@@ -45,7 +45,10 @@ export const Modal = ({
                 Link:{" "}
                 <i>
                   {selected?.link.startsWith("https") ? (
-                    <span className={styles.ModalLink} onClick={() => window.open(selected?.link, "_blank")}>
+                    <span
+                      className={styles.ModalLink}
+                      onClick={() => window.open(selected?.link, "_blank")}
+                    >
                       {selected?.link}
                     </span>
                   ) : (
